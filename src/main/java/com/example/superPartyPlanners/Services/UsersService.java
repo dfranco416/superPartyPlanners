@@ -1,7 +1,7 @@
 package com.example.superPartyPlanners.Services;
 
 
-import com.example.superPartyPlanners.Model.UsersModel;
+import com.example.superPartyPlanners.Models.UsersModel;
 import org.apache.catalina.User;
 
 interface UsersService {
