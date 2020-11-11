@@ -1,5 +1,8 @@
 package com.example.superPartyPlanners.Models;
 
+import javax.persistence.Entity;
+
+@Entity
 public class UsersModel {
 
     public String id;
