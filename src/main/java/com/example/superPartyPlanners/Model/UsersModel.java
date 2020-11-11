@@ -1,12 +1,6 @@
 package com.example.superPartyPlanners.Model;
 
-import org.springframework.data.annotation.Id;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-
-public class UserModel {
+public class UsersModel {
 
     public String id;
     public String name;
@@ -36,7 +30,7 @@ public class UserModel {
         this.emailAddress = emailAddress;
     }
 
-    public UserModel(String id, String name, String emailAddress) {
+    public UsersModel(String id, String name, String emailAddress) {
         this.id = id;
         this.name = name;
         this.emailAddress = emailAddress;
