@@ -9,13 +9,13 @@ public class Reservation {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private Long guestAmount;
+    private Integer guestAmount;
     private String dateAndTime;
 
 //    @OneToMany(mappedBy = "users")
 //    private User user;
 
-    public Reservation(long id, Long guestAmount, String dateAndTime){
+    public Reservation(long id, Integer guestAmount, String dateAndTime){
         this.id = id;
         this.guestAmount = guestAmount;
         this.dateAndTime = dateAndTime;
@@ -26,11 +26,11 @@ public class Reservation {
     }
 
 
-    public Long getGuestAmount() {
+    public Integer getGuestAmount() {
         return guestAmount;
     }
 
-    public void setGuestAmount(Long guestAmount) {
+    public void setGuestAmount(Integer guestAmount) {
         this.guestAmount = guestAmount;
     }
 
