@@ -1,7 +1,7 @@
 package com.example.superPartyPlanners.Services;
 
 
-import com.example.superPartyPlanners.Model.UsersModel;
+import com.example.superPartyPlanners.Models.UsersModel;
 import com.example.superPartyPlanners.Repositories.UserRepo;
 import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;

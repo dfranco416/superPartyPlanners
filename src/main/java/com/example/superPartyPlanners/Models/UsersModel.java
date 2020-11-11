@@ -1,4 +1,4 @@
-package com.example.superPartyPlanners.Model;
+package com.example.superPartyPlanners.Models;
 
 public class UsersModel {
 
