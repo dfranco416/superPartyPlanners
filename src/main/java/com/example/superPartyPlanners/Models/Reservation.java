@@ -12,8 +12,6 @@ public class Reservation {
     private Integer guestAmount;
     private String dateAndTime;
 
-//    @OneToMany(mappedBy = "users")
-//    private User user;
 
     public Reservation(long id, Integer guestAmount, String dateAndTime){
         this.id = id;
