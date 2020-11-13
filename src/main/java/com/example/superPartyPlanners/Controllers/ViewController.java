@@ -15,9 +15,13 @@ public class ViewController {
     @Autowired
     ReservationService reservationService;
 
+//    @Autowired
+//    UsersService usersService;
+
     @RequestMapping("/index")
     public String reservationModel(Model model){
         model.addAttribute("reservations",reservationService.getAllReservations());
+//        model.addAttribute("user",usersService);
         return "index";
     }
 
