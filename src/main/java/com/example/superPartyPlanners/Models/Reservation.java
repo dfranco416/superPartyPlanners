@@ -12,9 +12,6 @@ public class Reservation {
     private Integer guestAmount;
     private String dateAndTime;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    private UsersModel usersModel;
-
     public Reservation(){}
 
     public Reservation(Integer guestAmount, String dateAndTime){
