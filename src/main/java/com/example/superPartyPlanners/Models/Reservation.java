@@ -12,9 +12,9 @@ public class Reservation {
     private Integer guestAmount;
     private String dateAndTime;
 
+    public Reservation(){}
 
-    public Reservation(long id, Integer guestAmount, String dateAndTime){
-        this.id = id;
+    public Reservation(Integer guestAmount, String dateAndTime){
         this.guestAmount = guestAmount;
         this.dateAndTime = dateAndTime;
     }
@@ -38,5 +38,14 @@ public class Reservation {
 
     public void setDateAndTime(String dateAndTime) {
         this.dateAndTime = dateAndTime;
+    }
+
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "id=" + id +
+                ", guestAmount=" + guestAmount +
+                ", dateAndTime='" + dateAndTime + '\'' +
+                '}';
     }
 }

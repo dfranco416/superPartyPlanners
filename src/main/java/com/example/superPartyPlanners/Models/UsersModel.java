@@ -1,19 +1,28 @@
 package com.example.superPartyPlanners.Models;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class UsersModel {
 
-    public String id;
-    public String name;
-    public String emailAddress;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
-    public String getId() {
+    private String name;
+    private String emailAddress;
+
+    @OneToMany(mappedBy = "usersModel")
+    private Set<Reservation> reservationSet;
+
+    public UsersModel(){}
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -33,7 +42,15 @@ public class UsersModel {
         this.emailAddress = emailAddress;
     }
 
-    public UsersModel(String id, String name, String emailAddress) {
+    public Set<Reservation> getReservationSet() {
+        return reservationSet;
+    }
+
+    public void setReservationSet(Set<Reservation> reservationSet) {
+        this.reservationSet = reservationSet;
+    }
+
+    public UsersModel(Long id, String name, String emailAddress) {
         this.id = id;
         this.name = name;
         this.emailAddress = emailAddress;
